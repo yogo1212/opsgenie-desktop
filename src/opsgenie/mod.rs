@@ -31,7 +31,7 @@ impl OpsGenieInterface {
 
         let ops_genie_config = OpsGenieConfig {
             api_key,
-            base_path: config.base_path.to_string(),
+            base_path: config.base_path.clone(),
             ..Default::default()
         };
 
